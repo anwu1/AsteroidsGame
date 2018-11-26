@@ -1,5 +1,6 @@
 abstract class Floater //Do NOT modify the Floater class! Make changes in the Spaceship class 
 {   
+
   protected int corners;  //the number of corners, a triangular floater has 3   
   protected int[] xCorners;   
   protected int[] yCorners;   
@@ -15,7 +16,7 @@ abstract class Floater //Do NOT modify the Floater class! Make changes in the Sp
   abstract public double getDirectionX();   
   abstract public void setDirectionY(double y);   
   abstract public double getDirectionY();   
-  abstract public void setPointDirection(int degrees);   
+  abstract public void setPointDirection(int degrees);
   abstract public double getPointDirection(); 
 
   //Accelerates the floater in the direction it is pointing (myPointDirection)   
