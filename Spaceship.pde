@@ -19,8 +19,7 @@ class Spaceship extends Floater
       yCorners[4]=-10;
        xCorners[5]=0;
       yCorners[5]=-10;
-      
- 
+
       myColor= 250;
       myPointDirection =0;
   }
