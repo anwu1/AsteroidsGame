@@ -16,6 +16,9 @@ public void setup()
   }
 }
 
+
+
+
 public void draw() 
 { 
   background(0);
@@ -26,33 +29,54 @@ public void draw()
   }
   fill (203, 121, 21);
   ellipse (1000, 0, 300, 300);
-  if (wIsPressed ==true && sIsPressed ==true ){
-    bob. accelerate (0);
-}
-if (wIsPressed ==true ){
-    bob. accelerate (1);
-}
-if (sIsPressed ==true ){
-    bob. accelerate (-1);
+
+
+  if (wIsPressed == true){
+    bob.accelerate(1);
+  }
+    if (sIsPressed == true){
+    bob.accelerate(-1);
+  }
+  if (dIsPressed == true){
+    bob.turn(1);
+  }
+  if (aIsPressed == true){
+    bob.turn(-1);
+  }
+  
+  
+  
 }
 
-  if (key == 'w') {
-    wIsPressed=true;
- 
-  } else if (key == 's') {
-    sIsPressed=true;
-  }
+public void keyPressed() {
 
-  if (key == 'a') {
-    aIsPressed=true;
-    System.out.println("a");
-    bob.turn (-5);
-  } else if  (key == 'd') {
-    dIsPressed=true;
-    System.out.println("d");
-    bob.turn (5);
-  }
   if (key == 'g') {
     bob.hyperspace();
   }
+  if (key == 'w') {
+    wIsPressed=true;
+  }
+    if (key == 's') {
+    sIsPressed=true;
+  }
+    if (key == 'd') {
+    dIsPressed=true;
+  }
+ if (key == 'a') {
+    aIsPressed=true;
+  }
 }
+  public void keyReleased() {
+    if (key == 'w') {
+      wIsPressed=false;
+    }
+      if (key == 's') {
+    sIsPressed=false;
+  }
+   if (key == 'd') {
+    dIsPressed=false;
+  }
+   if (key == 'a') {
+    aIsPressed=false;
+  }
+  }
