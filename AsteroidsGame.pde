@@ -43,6 +43,13 @@ public void draw()
   if (aIsPressed == true){
     bob.turn(-1);
   }
+   if (wIsPressed == false){
+    bob.accelerate(0);
+  }
+   if (sIsPressed == false){
+    bob.accelerate(0);
+  }
+  
   
   
   

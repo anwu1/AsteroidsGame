@@ -37,6 +37,8 @@ class Spaceship extends Floater
 
 
   public void hyperspace() {
+    fill (255);
+    rect(0,0, 1000,1000);
     myCenterX= Math.random()*1000;
     myCenterY=Math.random()*1000;
     myDirectionX=myDirectionY=0;
