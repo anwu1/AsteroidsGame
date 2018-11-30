@@ -11,4 +11,7 @@ public void show (){
   fill (250);
   ellipse ((float) myX,(float) myY, 2.0, 2.0);
 }
+public void blink (){
+  fill (0);
+}
 }
