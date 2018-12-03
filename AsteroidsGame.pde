@@ -31,14 +31,16 @@ public void draw()
     stars[i].show();
   }
    for (int i =0; i <10; i++) {
+
     raymond[i].show();
     raymond[i].move();
+    raymond[i].turn(3);
     
   }
-  
+
   fill (203, 121, 21);
   ellipse (1000, 0, 300, 300);
-
+  
 
   if (wIsPressed == true){
     bob.accelerate(0.1);

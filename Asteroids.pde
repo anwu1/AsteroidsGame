@@ -1,5 +1,4 @@
 class Asteroids extends Floater{
-  int speedRotate =3;
 
   
   public Asteroids (){
@@ -16,7 +15,7 @@ class Asteroids extends Floater{
       yCorners[1]=0;
       xCorners[2]=0;
       yCorners[2]=10;
-      myColor= 250;
+      myColor= 180;
       myPointDirection =0;
   }
    public void setX(int x){myCenterX=x;}
