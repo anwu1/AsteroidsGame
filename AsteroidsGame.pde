@@ -83,6 +83,9 @@ public void keyPressed() {
  if (key == 'a') {
     aIsPressed=true;
   }
+  if (key == 'l') {
+    noLoop();
+  }
 }
   public void keyReleased() {
     if (key == 'w') {
