@@ -28,7 +28,9 @@ public void draw()
   bob.move();
   fill(0);
   for (int i =0; i <150; i++) {
+   
     stars[i].show();
+
   }
    for (int i =0; i <10; i++) {
 
